@@ -58,7 +58,7 @@ export default function Contact() {
         {siteConfig.contact.header}
       </motion.h1>
       
-      <div className={`${showForm ? " grid gap-12grid-cols-1 md:grid-cols-2" : "text-center mx-auto max-w-2xl bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md border-primary border"} `}>
+      <div className={`${showForm ? "grid gap-12 grid-cols-1 md:grid-cols-2" : "text-center mx-auto max-w-2xl bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md border-primary border"} `}>
         {/* Contact Information */}
         <motion.div 
           className="space-y-8"
@@ -77,35 +77,39 @@ export default function Contact() {
             initial="initial"
             animate="animate"
           >
-            <motion.div 
-              className="flex items-center gap-4"
-              variants={fadeInUp}
-              whileHover={{ x: 10 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <FaEnvelope className="h-6 w-6 text-primary" />
-              <div>
-                <h3 className="font-semibold text-left">Email</h3>
-                <a href={`mailto:${siteConfig.contact.email}`} className="text-secondary hover:text-primary">
-                  {siteConfig.contact.email}
-                </a>
-              </div>
-            </motion.div>
+            {siteConfig.contact.email && (
+              <motion.div 
+                className="flex items-center gap-4"
+                variants={fadeInUp}
+                whileHover={{ x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <FaEnvelope className="h-6 w-6 text-primary" />
+                <div>
+                  <h3 className="font-semibold text-left">Email</h3>
+                  <a href={`mailto:${siteConfig.contact.email}`} className="text-secondary hover:text-primary">
+                    {siteConfig.contact.email}
+                  </a>
+                </div>
+              </motion.div>
+            )}
             
-            <motion.div 
-              className="flex items-center gap-4"
-              variants={fadeInUp}
-              whileHover={{ x: 10 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <FaPhone className="h-6 w-6 text-primary" />
-              <div>
-                <h3 className="font-semibold text-left">Phone</h3>
-                <a href={`tel:${siteConfig.contact.phone}`} className="text-secondary hover:text-primary">
-                  {siteConfig.contact.phone}
-                </a>
-              </div>
-            </motion.div>
+            {siteConfig.contact.phone && (
+              <motion.div 
+                className="flex items-center gap-4"
+                variants={fadeInUp}
+                whileHover={{ x: 10 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <FaPhone className="h-6 w-6 text-primary" />
+                <div>
+                  <h3 className="font-semibold text-left">Phone</h3>
+                  <a href={`tel:${siteConfig.contact.phone}`} className="text-secondary hover:text-primary">
+                    {siteConfig.contact.phone}
+                  </a>
+                </div>
+              </motion.div>
+            )}
             
             <motion.div 
               className="flex items-center gap-4"

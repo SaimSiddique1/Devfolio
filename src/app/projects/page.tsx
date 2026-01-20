@@ -14,7 +14,7 @@ export default function Projects() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        My Projects
+        Selected Projects
       </motion.h1>
       <motion.p 
         className="text-lg text-secondary mb-24 text-center"
@@ -22,7 +22,7 @@ export default function Projects() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Here are some of my recent projects. Click on the links to view the code or live demo.
+        Product-focused systems I have built end to end, from mobile experiences to backend infrastructure.
       </motion.p>
       
       <motion.div 

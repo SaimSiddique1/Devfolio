@@ -1,27 +1,27 @@
 
 //If you want to include blogs on your site, set showBlogs to true, otherwise set to false
 // If you set to true, make sure to create your blog mdx files in contents/blogs/
-const showBlogs = true;
+const showBlogs = false;
 
 export const siteConfig = {
     // ========================= Global Settings =========================
-    siteName: "Devfolio",
-    name: "Your Name Here",
-    metadataTitle: "Developer Portfolio Template",
+    siteName: "Saim Siddique",
+    name: "Saim Siddique",
+    metadataTitle: "Full-Stack Software Engineer",
     siteDescription:
-        "A modern, customizable developer portfolio template built with Next.js, Tailwind CSS, and MDX.",
+        "Builder-first full-stack engineer focused on product-grade systems, mobile apps, and backend infrastructure.",
     tabIcon: "/icon.svg", //An image found in the public folder to use as the tab icon. 
     socials: {
         github: {
-            show: true,
+            show: false,
             url: "https://github.com/username",
         },
         linkedin: {
-            show: true,
+            show: false,
             url: "https://linkedin.com/in/username",
         },
         twitter: {
-            show: true,
+            show: false,
             url: "https://twitter.com/username",
         }
     },
@@ -44,11 +44,11 @@ export const siteConfig = {
     hero: {
         headline: "Hi, I'm",
         subtitle:
-        "Software Engineer | Full Stack Developer | Empowering the Next Generation of Coders",
+        "A computer science student and full-stack engineer building product-grade systems with real users in mind.",
         profileImage: "/profile.jpg",
         ctaPrimary: {
             include: true,
-            label: "View Projects",
+            label: "Explore Projects",
             href: "/projects",
         },
         ctaSecondary: {
@@ -60,77 +60,78 @@ export const siteConfig = {
 
     // ========================= ABOUT PAGE CONFIG =========================
     about: {
-        bio: `I'm a passionate Full Stack Developer and mentor who loves building secure, scalable systems and helping others grow in tech.`,
+        bio: `Builder-first engineer who ships full systems end to end: mobile apps, backends, real-time infrastructure, and payments. I focus on clarity, scalability, and practical engineering over buzzwords.`,
 
         skills: {
             frontend: {
                 name: "Frontend",
                 include: true,
                 skill:[
-                    "React / Next.js",
-                    "TypeScript",
+                    "React",
+                    "React Native",
+                    "TypeScript / JavaScript",
                     "Tailwind CSS",
-                    "HTML / CSS",
-                    "Redux",
+                    "Expo",
+                    "UI Systems",
                     "Framer Motion",
-                    "Figma",
+                    "Google Maps API",
                 ]
             },
             backend: {
                 name: "Backend",
                 include: true,
                 skill:[
-                    "Node.js",
-                    "Express",
-                    "PostgreSQL",
+                    "Node.js / Express",
                     "MongoDB",
-                    "Django",
+                    "Supabase",
+                    "Stripe",
+                    "MQTT (Mosquitto)",
                     "REST APIs",
-                    "JWT Auth",
-                    "Socket.IO",
+                    "Real-time systems",
                 ],
             },
             cloud: {
-                name: "Cloud & DevOps",
+                name: "Cloud & Infrastructure",
                 include: true,
-                skill: ["Azure", "AWS", "CI/CD Pipelines", "Cloudinary"]
+                skill: ["Docker", "Linux", "Vercel", "Azure", "CI/CD"]
             },
             ai_security: {
-                name: "AI/ Data Science & Security",
+                name: "Languages",
                 include: true,
                 skill:[
                     "Python",
-                    "NumPy/Pandas",
-                    "Cybersecurity Fundamentals",
-                    "ML / Data Mining",
+                    "C++",
+                    "Java",
+                    "TypeScript",
+                    "JavaScript",
                 ],
             },
             tools: {
                 name: "Tools & Collaboration",
                 include: true,
-                skill: ["Git/GitHub", "VS Code", "Postman", "Notion/Trello/Asana", "Agile"],
+                skill: ["Git/GitHub", "VS Code", "Postman", "Docker", "Agile"],
             },
         },
 
         experience: [
             {
-                role: "Full Stack Developer",
-                company: "Tech Solutions Inc.",
-                duration: "Jan 2022 - Present",
+                role: "Research Assistant",
+                company: "DAMS Lab, UMBC",
+                duration: "Jul 2025 - Present",
                 points: [
-                    "Developed and maintained web applications using React, Node.js, and PostgreSQL.",
-                    "Led a team of 4 developers to build a cloud-based inventory management system.",
-                    "Implemented CI/CD pipelines to streamline deployment processes.",
+                    "Built backend services for a React Native IoT monitoring app with live environmental data.",
+                    "Designed APIs and socket channels for real-time updates across devices.",
+                    "Dockerized the data pipeline and MQTT server for reliable deployment.",
                 ],
             },
              {
-                role: "Full Stack Developer",
-                company: "Tech Solutions Inc.",
-                duration: "Jan 2022 - Present",
+                role: "Manager on Duty",
+                company: "Rite Aid",
+                duration: "Mar 2023 - Aug 2025",
                 points: [
-                    "Developed and maintained web applications using React, Node.js, and PostgreSQL.",
-                    "Led a team of 4 developers to build a cloud-based inventory management system.",
-                    "Implemented CI/CD pipelines to streamline deployment processes.",
+                    "Supported POS and back-office systems, reducing downtime through proactive diagnostics.",
+                    "Trained staff on technical workflows and led day-to-day operations.",
+                    "Owned issue triage and escalation to keep critical systems running.",
                 ],
             },
             // Add more experiences as needed
@@ -138,16 +139,23 @@ export const siteConfig = {
 
         education: [
             {
-                degree: "B.S. in Computer Science",
-                institution: "State University",
-                duration: "2018 - 2022",
+                degree: "B.S. Computer Science",
+                institution: "University of Maryland Baltimore County (UMBC)",
+                duration: "Expected May 2027",
                 details: [
-                    "Graduated with Honors, GPA: 3.8/4.0",
-                    "Relevant Coursework: Data Structures, Algorithms, Database Systems, Web Development",
-                    "Activities: Coding Club President, Hackathon Organizer",
+                    "Focus areas: systems, backend engineering, and applied software design",
+                    "Relevant coursework: data structures, algorithms, databases, web development",
                 ]
                     
-            }, 
+            },
+            {
+                degree: "CodePath - Intermediate Technical Interview Prep",
+                institution: "CodePath",
+                duration: "Aug 2025",
+                details: [
+                    "Advanced problem solving, data structures, and interview readiness.",
+                ]
+            },
             // Add more education entries as needed
         ]
     },
@@ -162,12 +170,12 @@ export const siteConfig = {
 
     // ========================= CONTACT PAGE CONFIG =========================
     contact: {
-        header: "Contact Me",
+        header: "Contact",
         description:
-        "I'm always open to discussing new projects, creative ideas, or opportunities to collaborate.",
-        email: "example@example.com",
-        phone: "+1 (123) 456-7890",
-        location: "Remote",
+        "Open to internships, engineering roles, and founder-minded collaborations.",
+        email: "saim.siddique@umbc.edu",
+        phone: "",
+        location: "Baltimore, MD",
         includeForm: true, // Set to true to include contact form, false to hide
     },
 
@@ -180,9 +188,9 @@ export const siteConfig = {
 
     // ========================= FOOTER CONFIG =========================
     footer: {
-        copyrightName: "Your Name",
+        copyrightName: "Saim Siddique",
         copyrightYear: "2025",
-        details: "Customizable developer portfolio template built with Next.js, Tailwind CSS, and MDX.",
+        details: "Full-stack engineer building product-grade systems and real-time infrastructure.",
     },
 };
 
