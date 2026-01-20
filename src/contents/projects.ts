@@ -14,17 +14,18 @@ export const projects: Project[] = [
     technologies: ["React", "JavaScript", "Monaco Editor"],
   },
   {
-    title: "Real-World Elevator Control System",
-    description:
-      "Multi-elevator scheduling simulation focused on prioritization, emergency handling, and real-time behavior. Uses doubly linked lists to manage concurrent requests and includes Linux-based unit testing.",
-    technologies: ["C++", "Linux", "Unit Testing"],
-  },
-  {
     title: "HopHacks 2025 - Personal Health Time Machine",
     description:
       "AI-powered health analytics app using wearable data to predict future risk profiles. Built in 36 hours with a four-person agile team and placed top 10 out of 100+ teams.",
     technologies: ["React Native", "Expo", "Vercel", "Azure"],
   },
+  {
+    title: "Real-World Elevator Control System",
+    description:
+      "Multi-elevator scheduling simulation focused on prioritization, emergency handling, and real-time behavior. Uses doubly linked lists to manage concurrent requests and includes Linux-based unit testing.",
+    technologies: ["C++", "Linux", "Unit Testing"],
+  },
+
   // Add more projects as needed
 ];
 
