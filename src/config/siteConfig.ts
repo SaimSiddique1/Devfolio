@@ -13,12 +13,12 @@ export const siteConfig = {
     tabIcon: "/icon.svg", //An image found in the public folder to use as the tab icon. 
     socials: {
         github: {
-            show: false,
-            url: "https://github.com/username",
+            show: true,
+            url: "https://github.com/SaimSiddique1",
         },
         linkedin: {
-            show: false,
-            url: "https://linkedin.com/in/username",
+            show: true,
+            url: "https://www.linkedin.com/in/saimsiddique1/",
         },
         twitter: {
             show: false,
@@ -44,7 +44,7 @@ export const siteConfig = {
     hero: {
         headline: "Hi, I'm",
         subtitle:
-        "A computer science student and full-stack engineer building product-grade systems with real users in mind.",
+        "CS student at UMBC | Full-Stack Engineer | Mobile, backend, and real-time systems",
         profileImage: "/profile.jpg",
         ctaPrimary: {
             include: true,
@@ -60,7 +60,7 @@ export const siteConfig = {
 
     // ========================= ABOUT PAGE CONFIG =========================
     about: {
-        bio: `Builder-first engineer who ships full systems end to end: mobile apps, backends, real-time infrastructure, and payments. I focus on clarity, scalability, and practical engineering over buzzwords.`,
+        bio: `I'm a junior at the University of Maryland, Baltimore County pursuing a B.S. in Computer Science. Most of my work centers on building full systems end to end, with experience across mobile apps, backend services, and real-time infrastructure. Outside of coursework, I've worked as a research assistant in the DAMS Lab and built multiple production-style projects that reflect my interest in practical, systems-level engineering.`,
 
         skills: {
             frontend: {
@@ -173,7 +173,7 @@ export const siteConfig = {
         header: "Contact",
         description:
         "Open to internships, engineering roles, and founder-minded collaborations.",
-        email: "saim.siddique@umbc.edu",
+        email: "saimsiddique728@gmail.com",
         phone: "",
         location: "Baltimore, MD",
         includeForm: true, // Set to true to include contact form, false to hide
@@ -183,14 +183,14 @@ export const siteConfig = {
     //Change if using the contact form
     resend: {
         fromEmail: "Portfolio Contact <onboarding@resend.dev>", 
-        toEmail: "your.email@domain.com", // your personal email
+        toEmail: "saimsiddique728@gmail.com", // your personal email
     },
 
     // ========================= FOOTER CONFIG =========================
     footer: {
         copyrightName: "Saim Siddique",
         copyrightYear: "2025",
-        details: "Full-stack engineer building product-grade systems and real-time infrastructure.",
+        details: "UMBC CS | Full-stack systems builder",
     },
 };
 
