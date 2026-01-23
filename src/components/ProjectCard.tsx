@@ -96,7 +96,7 @@ export default function ProjectCard ({ title, description, technologies, image, 
             whileTap={{ scale: 0.95 }}
           >
             <FaExternalLinkAlt className="h-5 w-5" />
-            <span>Live Demo</span>
+            <span>View Site</span>
           </motion.a>
         )}
       </motion.div>

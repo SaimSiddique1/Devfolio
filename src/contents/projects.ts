@@ -6,12 +6,14 @@ export const projects: Project[] = [
     description:
       "Two-sided marketplace connecting customers with verified movers. Built end-to-end with job posting, discovery, in-app chat, booking, and Stripe-powered payments. Backend manages job lifecycle state, role-based access, and real-time notifications with room for pricing models, ratings, and verification.",
     technologies: ["React Native", "Node.js", "MongoDB", "Supabase", "Stripe"],
+    demoLink: "https://saimsiddique1.github.io/carton-site/",
   },
   {
     title: "Debug Dungeon - Gamified Coding Platform",
     description:
       "A coding game where users defeat enemies by fixing broken code inside a Monaco-powered editor. Real-time feedback, adaptive difficulty, progression, and persistent player state make it feel like a production-grade learning platform.",
     technologies: ["React", "JavaScript", "Monaco Editor"],
+    demoLink: "https://debug-dungeon.vercel.app/",
   },
   {
     title: "HopHacks 2025 - Personal Health Time Machine",
@@ -28,5 +30,3 @@ export const projects: Project[] = [
 
   // Add more projects as needed
 ];
-
-
