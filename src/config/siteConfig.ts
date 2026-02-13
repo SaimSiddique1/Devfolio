@@ -45,7 +45,7 @@ export const siteConfig = {
         headline: "Hi, I'm",
         subtitle:
         "CS student at UMBC | Full-Stack Engineer | Mobile, backend, and real-time systems",
-        profileImage: "/profile.jpg",
+        profileImage: "/projects/saim.png",
         ctaPrimary: {
             include: true,
             label: "Explore Projects",
