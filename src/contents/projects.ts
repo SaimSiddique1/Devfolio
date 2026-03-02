@@ -27,6 +27,12 @@ export const projects: Project[] = [
       "Multi-elevator scheduling simulation focused on prioritization, emergency handling, and real-time behavior. Uses doubly linked lists to manage concurrent requests and includes Linux-based unit testing.",
     technologies: ["C++", "Linux", "Unit Testing"],
   },
+  {
+    title: "DNA Database System",
+    description:
+      "High-performance DNA sequence database built in C++ with a custom hash table supporting linear, quadratic, and double hashing. Includes incremental rehashing, tombstone-aware deletion, and threshold-based resizing to preserve amortized O(1) operations under stress.",
+    technologies: ["C++", "Data Structures", "Hash Tables", "Unit Testing"],
+  },
 
   // Add more projects as needed
 ];
