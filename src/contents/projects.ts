@@ -4,9 +4,15 @@ export const projects: Project[] = [
   {
     title: "Carton - Moving Marketplace App",
     description:
-      "Two-sided marketplace connecting customers with verified movers. Built end-to-end with job posting, discovery, in-app chat, booking, and Stripe-powered payments. Backend manages job lifecycle state, role-based access, and real-time notifications with room for pricing models, ratings, and verification.",
+      "Two-sided mobile marketplace with job lifecycle state management, mover discovery, in-app messaging, and booking workflows. Built secure Stripe subscription and payment flows with role-based authorization, plus a scalable Node.js/MongoDB backend with indexed queries, pagination, and 15+ core APIs.",
     technologies: ["React Native", "Node.js", "MongoDB", "Supabase", "Stripe"],
     demoLink: "https://saimsiddique1.github.io/carton-site/",
+  },
+  {
+    title: "Sports Tracker - Full-Stack Analytics Platform",
+    description:
+      "Full-stack soccer analytics platform with Express routes integrating third-party APIs and normalizing inconsistent schemas for reliable frontend use. Built resilient pagination/error handling and led a 6-person Jira-managed Scrum workflow with feature-branch and pull request standards across three sprints.",
+    technologies: ["Node.js", "Express", "React", "Jira"],
   },
   {
     title: "Debug Dungeon - Gamified Coding Platform",
@@ -28,10 +34,10 @@ export const projects: Project[] = [
     technologies: ["C++", "Linux", "Unit Testing"],
   },
   {
-    title: "DNA Database System",
+    title: "DNA Database Engine (Incremental Rehashing Hash Table)",
     description:
-      "High-performance DNA sequence database built in C++ with a custom hash table supporting linear, quadratic, and double hashing. Includes incremental rehashing, tombstone-aware deletion, and threshold-based resizing to preserve amortized O(1) operations under stress.",
-    technologies: ["C++", "Data Structures", "Hash Tables", "Unit Testing"],
+      "In-memory key-value DNA database in C++ supporting linear, quadratic, and double hashing with incremental rehashing based on load and deletion thresholds. Implemented dual-table migration and function-pointer hashing configurability, validated with collision-heavy tests and 50K+ key benchmarks for stable O(1) average access.",
+    technologies: ["C++", "Data Structures", "Hash Tables"],
   },
 
   // Add more projects as needed

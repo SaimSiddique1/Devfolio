@@ -60,7 +60,7 @@ export const siteConfig = {
 
     // ========================= ABOUT PAGE CONFIG =========================
     about: {
-        bio: `I'm a junior at the University of Maryland, Baltimore County pursuing a B.S. in Computer Science. Most of my work centers on building full systems end to end, with experience across mobile apps, backend services, and real-time infrastructure. Outside of coursework, I've worked as a research assistant in the DAMS Lab and built multiple production-style projects that reflect my interest in practical, systems-level engineering.`,
+        bio: `I'm a junior at the University of Maryland, Baltimore County pursuing a B.S. in Computer Science. Most of my work centers on building full systems end to end, with experience across mobile apps, backend services, and real-time infrastructure. Outside of coursework, I work as a Software Engineer Intern (Backend Lead) in the DAMS Lab and build production-style projects that reflect my interest in practical, systems-level engineering.`,
 
         skills: {
             frontend: {
@@ -69,12 +69,8 @@ export const siteConfig = {
                 skill:[
                     "React",
                     "React Native",
-                    "TypeScript / JavaScript",
-                    "Tailwind CSS",
-                    "Expo",
-                    "UI Systems",
-                    "Framer Motion",
-                    "Google Maps API",
+                    "JavaScript",
+                    "TypeScript",
                 ]
             },
             backend: {
@@ -83,17 +79,15 @@ export const siteConfig = {
                 skill:[
                     "Node.js / Express",
                     "MongoDB",
-                    "Supabase",
-                    "Stripe",
-                    "MQTT (Mosquitto)",
                     "REST APIs",
-                    "Real-time systems",
+                    "MQTT",
+                    "WebSockets",
                 ],
             },
             cloud: {
-                name: "Cloud & Infrastructure",
+                name: "Infrastructure",
                 include: true,
-                skill: ["Docker", "Linux", "Vercel", "Azure", "CI/CD"]
+                skill: ["Docker", "Azure", "Linux", "VirtualBox", "Windows", "Basic TCP/IP"]
             },
             ai_security: {
                 name: "Languages",
@@ -109,29 +103,29 @@ export const siteConfig = {
             tools: {
                 name: "Tools & Collaboration",
                 include: true,
-                skill: ["Git/GitHub", "VS Code", "Postman", "Docker", "Agile"],
+                skill: ["Git/GitHub", "Jira", "Agile/Scrum", "Postman"],
             },
         },
 
         experience: [
             {
-                role: "Research Assistant",
-                company: "DAMS Lab, UMBC",
+                role: "Software Engineer Intern - Backend Lead",
+                company: "DAMS Lab, University of Maryland, Baltimore County",
                 duration: "Jul 2025 - Present",
                 points: [
-                    "Built backend services for a React Native IoT monitoring app with live environmental data.",
-                    "Designed APIs and socket channels for real-time updates across devices.",
-                    "Dockerized the data pipeline and MQTT server for reliable deployment.",
+                    "Leading backend architecture for the Smart Library IoT platform with MQTT telemetry ingestion (5s publish interval), MongoDB time-series schema design, and floor-scoped WebSocket streaming.",
+                    "Implementing a write-first pipeline that validates sensor payloads before persistence using indexed roomId/timestamp queries and idempotent sensorId-timestamp constraints.",
+                    "Building subscription-based WebSocket routing with dynamic floor registration to reduce unnecessary broadcast traffic across concurrent React Native clients.",
                 ],
             },
              {
-                role: "Manager on Duty",
+                role: "Manager on Duty - Technical Operations",
                 company: "Rite Aid",
                 duration: "Mar 2023 - Aug 2025",
                 points: [
-                    "Supported POS and back-office systems, reducing downtime through proactive diagnostics.",
-                    "Trained staff on technical workflows and led day-to-day operations.",
-                    "Owned issue triage and escalation to keep critical systems running.",
+                    "Provided frontline technical support for POS registers, inventory platforms, and back-office systems to maintain uninterrupted operations.",
+                    "Reduced technology downtime by 20% through proactive troubleshooting, root-cause analysis, and coordination with corporate IT escalation channels.",
+                    "Configured and maintained scanners, receipt printers, and workstations while training staff on system workflows and access best practices.",
                 ],
             },
             // Add more experiences as needed
@@ -140,20 +134,20 @@ export const siteConfig = {
         education: [
             {
                 degree: "B.S. Computer Science",
-                institution: "University of Maryland Baltimore County (UMBC)",
+                institution: "University of Maryland, Baltimore County (UMBC)",
                 duration: "Expected May 2027",
                 details: [
-                    "Focus areas: systems, backend engineering, and applied software design",
-                    "Relevant coursework: data structures, algorithms, databases, web development",
+                    "GPA: 3.5/4.0",
+                    "Baltimore, MD",
                 ]
                     
             },
             {
-                degree: "CodePath - Intermediate Technical Interview Prep",
+                degree: "Intermediate Technical Interview Prep Program (Data Structures & Algorithms)",
                 institution: "CodePath",
                 duration: "Aug 2025",
                 details: [
-                    "Advanced problem solving, data structures, and interview readiness.",
+                    "Remote",
                 ]
             },
             // Add more education entries as needed
@@ -174,7 +168,7 @@ export const siteConfig = {
         description:
         "Open to internships, engineering roles, and founder-minded collaborations.",
         email: "saimsiddique728@gmail.com",
-        phone: "",
+        phone: "443-729-6033",
         location: "Baltimore, MD",
         includeForm: true, // Set to true to include contact form, false to hide
     },
